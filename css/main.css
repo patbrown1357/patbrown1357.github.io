@@ -23,15 +23,15 @@ body {
   justify-content: flex-end;
 }
 
+.navbar .btn {
+  background-color: #fcad90;
+}
+
 .header {
   background-image: url('../images/tileBKG.jpg');
   background-size: cover;
   background-position: center;
   position: relative;
-}
-
-.navbar .btn {
-  background-color: #fcad90;
 }
 
 .overlay {
