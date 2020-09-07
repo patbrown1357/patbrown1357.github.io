@@ -2,30 +2,42 @@ body {
   padding: 0;
   margin: 0;
   background: #ffecc4;
+
 }
 
 /*--- navigation bar ---*/
 .navbar {
-  background:transparent;
+  background: transparent;
 }
 .nav-link,
 .navbar-brand {
-  color: #ffffff;
+  color: #cfc4f5;
   cursor: pointer;
 }
 .nav-link {
   margin-right: 1em !important;
+  font-size: 2em;
+  color: #cfc4f5;
 }
-.nav-link:hover {
-  color: #000;
+
+.navbar .btn {
+  margin-right: 1em !important;
+  font-size: 2em;
+  color: #cfc4f5;
+  background-color: transparent;
+
 }
+
+.navbar .btn:hover {
+  color: #ffecc4;
+  background-color:#a58ef5;
+}
+
 .navbar-collapse {
   justify-content: flex-end;
 }
 
-.navbar .btn {
-  background-color: #fcad90;
-}
+
 
 .header {
   background-image: url('../images/tileBKG.jpg');
@@ -43,16 +55,20 @@ body {
   background: rgba(0, 0, 0, 0.6);
 }
 
+.clock {
+  color:#ffecc4;
+}
+
 .description {
-  left: 50%;
+  left: 40%;
   position: absolute;
-  top: 45%;
+  top: 50%;
   transform: translate(-50%, -55%);
   text-align: center;
 }
 
 .description h1 {
-  color: #6ab446;
+  color: #cfc4f5;
 }
 
 .description p {
@@ -74,10 +90,29 @@ body {
   color:#000;
 }
 
+.proj-list {
+  left: 40%;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -55%);
+
+}
+
+.proj-list p {
+  color: #fff;
+  font-size: 1.3rem;
+  line-height: 1.5;
+}
+
+.proj-list h4 {
+  color: #cfc4f5;
+}
+
 .features {
   margin: 4em auto;
   padding: 1em;
   position: relative;
+  display:flex;
 }
 
 .feature-title {
@@ -116,12 +151,21 @@ body {
   background-color: #222;
   color: #ffecc4;
   padding: 60px 0 30px;
+  margin-top:auto;
 }
 
 .footer-copyright {
   color: #666;
   padding: 40px 0;
 }
+
+.logo {
+  background: transparent;
+  width: 100px;
+  height: 100px;
+}
+
+
 
 @media (max-width: 575.98px) {
 
