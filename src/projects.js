@@ -34,7 +34,7 @@ class ProjBlock extends React.Component {
     return (
       <div class="media">
         <div class="media-left">
-          <img class="media-object" src="images/placeGhost.jpg"/>
+          <img class="media-object" src="images/perlin.gif"/>
         </div>
         <div class="media-body">
           <h4 class="media-Heading">Media Heading</h4>
