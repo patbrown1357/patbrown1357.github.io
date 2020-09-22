@@ -18,11 +18,86 @@ var About = function (_React$Component) {
   _createClass(About, [{
     key: 'render',
     value: function render() {
-      return React.createElement('div', null);
+      return React.createElement(
+        'div',
+        { 'class': 'description' },
+        React.createElement(
+          'div',
+          { 'class': 'row' },
+          React.createElement(
+            'h1',
+            null,
+            ' Who is Patrick ',
+            React.createElement(
+              'u',
+              null,
+              'Otho'
+            ),
+            ' Brown? '
+          )
+        ),
+        React.createElement(
+          'div',
+          { 'class': 'row' },
+          React.createElement(
+            'h4',
+            null,
+            'General'
+          ),
+          React.createElement('div', { 'class': 'w-100' }),
+          React.createElement(
+            'div',
+            { 'class': 'col-sm' },
+            React.createElement(
+              'p',
+              null,
+              'I\'m currently in my 20\'s and living in Pittsburgh. I\'m originally from',
+              React.createElement(
+                'a',
+                { href: 'https://en.wikipedia.org/wiki/Johnstown,_Pennsylvania' },
+                ' Johnstown, PA '
+              ),
+              'which is about an hour east of Pittsburgh.'
+            )
+          ),
+          React.createElement(
+            'div',
+            { 'class': 'col-sm' },
+            React.createElement('img', { 'class': 'logo', src: 'images/Johnstownview.jpg' })
+          )
+        ),
+        React.createElement(
+          'div',
+          { 'class': 'row' },
+          React.createElement(
+            'h4',
+            null,
+            'Hobbies'
+          )
+        ),
+        React.createElement(
+          'div',
+          { 'class': 'row' },
+          React.createElement(
+            'h4',
+            null,
+            'College'
+          )
+        ),
+        React.createElement(
+          'div',
+          { 'class': 'row' },
+          React.createElement(
+            'h4',
+            null,
+            'Hopes & Dreams'
+          )
+        )
+      );
     }
   }]);
 
   return About;
 }(React.Component);
 
-ReactDOM.render(React.createElement(About, null), document.getElementById('fake-name'));
+ReactDOM.render(React.createElement(About, null), document.getElementById('about-load'));

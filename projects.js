@@ -66,7 +66,7 @@ var ProjBlock = function (_React$Component2) {
         React.createElement(
           "div",
           { "class": "media-left" },
-          React.createElement("img", { "class": "media-object", src: "images/placeGhost.jpg" })
+          React.createElement("img", { "class": "logo", src: "images/perlin.gif" })
         ),
         React.createElement(
           "div",
@@ -74,7 +74,7 @@ var ProjBlock = function (_React$Component2) {
           React.createElement(
             "h4",
             { "class": "media-Heading" },
-            "Media Heading"
+            "This is changing"
           ),
           React.createElement(
             "p",

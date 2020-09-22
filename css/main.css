@@ -5,6 +5,11 @@ body {
 
 }
 
+.col-sm {
+  text-align: left;
+  color: #cfc4f5;
+}
+
 /*--- navigation bar ---*/
 .navbar {
   background: transparent;
@@ -37,7 +42,9 @@ body {
   justify-content: flex-end;
 }
 
-
+h4 {
+  color: #ffecc4;
+}
 
 .header {
   background-image: url('../images/tileBKG.jpg');
