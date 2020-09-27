@@ -4,34 +4,65 @@ class About extends React.Component {
 
   }
 
+  hide(comp) {
+    const style = document.getElementById(comp).style.display;
+    if( style == "none") {
+      document.getElementById(comp).style.display = "flex";
+    } else if( style != "none") {
+      document.getElementById(comp).style.display = "none";
+    }
+  }
+
+
   render() {
     return (
-      <div class='description'>
-        <div class = 'row'>
-        <h1> Who is Patrick <u>Otho</u> Brown? </h1>
-        </div>
-        <div class='row'>
-          <h4>General</h4>
+      <div id="fixabout" class='description'>
+        <div id="general" class='row'>
+          <h4 onClick={() => this.hide("generalp")}>General</h4>
           <div class="w-100"></div>
           <div class='col-sm'>
-            <p>I'm currently in my 20's and living in Pittsburgh. I'm originally from
+            <p id="generalp" style={{display:'none'}}>I'm currently in my 20's and living in Pittsburgh. I'm originally from
                <a href="https://en.wikipedia.org/wiki/Johnstown,_Pennsylvania"> Johnstown, PA </a>
                which is about an hour east of Pittsburgh.
+
             </p>
           </div>
-          <div class='col-sm'><img class='logo' src='images/Johnstownview.jpg'></img></div>
         </div>
 
-        <div class='row'>
-        <h4>Hobbies</h4>
+        <div id="hobbies" class='row'>
+        <h4 onClick={() => this.hide("hobbiesp")}>Hobbies</h4>
+        <div class="w-100"></div>
+        <div class='col-sm'>
+          <p id="hobbiesp" style={{display:'none'}}>I'm currently in my 20's and living in Pittsburgh. I'm originally from
+             <a href="https://en.wikipedia.org/wiki/Johnstown,_Pennsylvania"> Johnstown, PA </a>
+             which is about an hour east of Pittsburgh.
+
+          </p>
+        </div>
         </div>
 
-        <div class='row'>
-        <h4>College</h4>
+        <div id="college" class='row'>
+        <h4 onClick={() => this.hide("schoolp")}>School</h4>
+        <div class="w-100"></div>
+        <div class='col-sm'>
+          <p id="schoolp" style={{display:'none'}}>I'm currently in my 20's and living in Pittsburgh. I'm originally from
+             <a href="https://en.wikipedia.org/wiki/Johnstown,_Pennsylvania"> Johnstown, PA </a>
+             which is about an hour east of Pittsburgh.
+
+          </p>
+        </div>
         </div>
 
-        <div class='row'>
-        <h4>Hopes & Dreams</h4>
+        <div id="h&d" class='row'>
+        <h4 onClick={() => this.hide("handpp")} >Hopes & Dreams</h4>
+        <div class="w-100"></div>
+        <div class='col-sm'>
+          <p id="handpp" style={{display:'none'}}>I'm currently in my 20's and living in Pittsburgh. I'm originally from
+             <a href="https://en.wikipedia.org/wiki/Johnstown,_Pennsylvania"> Johnstown, PA </a>
+             which is about an hour east of Pittsburgh.
+
+          </p>
+        </div>
         </div>
 
       </div>

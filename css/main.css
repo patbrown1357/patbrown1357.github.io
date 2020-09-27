@@ -43,7 +43,13 @@ body {
 }
 
 h4 {
-  color: #ffecc4;
+  color: #cfc4f5;
+  border-radius: 5px;
+}
+
+h4:hover {
+  color:  #ffecc4;
+  cursor: pointer;
 }
 
 .header {
@@ -98,7 +104,7 @@ h4 {
 }
 
 .proj-list {
-  left: 40%;
+  left: 35%;
   position: absolute;
   top: 50%;
   transform: translate(-50%, -55%);
@@ -106,12 +112,17 @@ h4 {
 }
 
 .proj-list p {
+  word-wrap: break-word;
+  margin-left: 40px;
+  margin-bottom: 50px;
   color: #fff;
   font-size: 1.3rem;
   line-height: 1.5;
 }
 
 .proj-list h4 {
+  margin-left: 40px;
+  margin-bottom: 10px;
   color: #cfc4f5;
 }
 
@@ -170,6 +181,7 @@ h4 {
   background: transparent;
   width: 100px;
   height: 100px;
+  margin-top: 50px;
 }
 
 

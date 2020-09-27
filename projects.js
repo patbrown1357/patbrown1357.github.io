@@ -18,28 +18,57 @@ var Projects = function (_React$Component) {
   _createClass(Projects, [{
     key: "render",
     value: function render() {
+      var title = "P5 Javascript Engine";
+      var image = "images/perlin.gif";
+      var description = "P5.js is a graphical Javascript engine. For me it works as a nice\
+     creative outlet for when I am programming.";
+
+      var title1 = "School Projects";
+      var image1 = "images/perlin.gif";
+      var description1 = "blah blah blah";
+
+      var title2 = "Razzybot (RaspberryPi)";
+      var image2 = "images/perlin.gif";
+      var description2 = "blah blah blah";
+
       return React.createElement(
         "div",
         null,
         React.createElement(
-          "h1",
-          null,
-          "Project"
+          "div",
+          { "class": "row" },
+          React.createElement(ProjBlock, { title: title, description: description, image: image })
         ),
         React.createElement(
           "div",
           { "class": "row" },
-          React.createElement(ProjBlock, null)
+          React.createElement(ProjBlock, { title: title1, description: description1, image: image1 })
         ),
         React.createElement(
           "div",
           { "class": "row" },
-          React.createElement(ProjBlock, null)
+          React.createElement(ProjBlock, { title: title2, description: description2, image: image2 })
         ),
         React.createElement(
           "div",
-          { "class": "row" },
-          React.createElement(ProjBlock, null)
+          { "class": "row", style: { padding: '20px' } },
+          React.createElement(
+            "p",
+            null,
+            "Check out ",
+            React.createElement(
+              "strike",
+              null,
+              "most of"
+            ),
+            " these projects out on my",
+            React.createElement(
+              "a",
+              { href: "https://github.com/patbrown1357", style: { color: '#cfc4f5' } },
+              " Github"
+            ),
+            "!"
+          )
         )
       );
     }
@@ -65,8 +94,8 @@ var ProjBlock = function (_React$Component2) {
         { "class": "media" },
         React.createElement(
           "div",
-          { "class": "media-left" },
-          React.createElement("img", { "class": "logo", src: "images/perlin.gif" })
+          { "class": "media-right" },
+          React.createElement("img", { "class": "logo", src: this.props.image })
         ),
         React.createElement(
           "div",
@@ -74,12 +103,12 @@ var ProjBlock = function (_React$Component2) {
           React.createElement(
             "h4",
             { "class": "media-Heading" },
-            "This is changing"
+            this.props.title
           ),
           React.createElement(
             "p",
             { "class": "text-left" },
-            " Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla erat nisi, viverra vitae tellus at, vehicula ullamcorper tellus. Pellentesque tincidunt dui mollis quam maximus interdum. Etiam pulvinar urna et lectus ultrices pellentesque. Praesent dapibus vel lacus in posuere. Etiam quis accumsan eros. Curabitur pretium facilisis pharetra. Sed leo sem, dictum in dolor et, tempus venenatis mauris. Donec gravida ac est id mollis. Aliquam luctus est vitae metus tempus iaculis."
+            this.props.description
           )
         )
       );

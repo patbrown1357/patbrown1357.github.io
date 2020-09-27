@@ -5,17 +5,36 @@ class Projects extends React.Component {
   }
 
   render() {
+    const title = "P5 Javascript Engine";
+    const image ="images/perlin.gif";
+    var description =
+    "P5.js is a graphical Javascript engine. For me it works as a nice\
+     creative outlet for when I am programming.";
+
+    const title1 = "School Projects";
+    const image1 ="images/perlin.gif";
+    const description1 = "blah blah blah";
+
+    const title2 = "Razzybot (RaspberryPi)";
+    const image2 ="images/perlin.gif";
+    const description2 = "blah blah blah";
+
     return (
       <div>
-        <h1>Project</h1>
         <div class="row">
-        <ProjBlock />
+        <ProjBlock title={title} description={description} image={image}/>
         </div>
         <div class="row">
-        <ProjBlock />
+        <ProjBlock title={title1} description={description1} image={image1}/>
         </div>
         <div class="row">
-        <ProjBlock />
+        <ProjBlock title={title2} description={description2} image={image2}/>
+        </div>
+        <div class="row" style={{padding:'20px'}}>
+          <p>
+            Check out <strike>most of</strike> these projects out on my
+            <a href="https://github.com/patbrown1357" style ={{color:'#cfc4f5'}}> Github</a>!
+          </p>
         </div>
       </div>
     );
@@ -33,12 +52,13 @@ class ProjBlock extends React.Component {
   render() {
     return (
       <div class="media">
-        <div class="media-left">
-          <img class="logo" src="images/perlin.gif"/>
+        <div class="media-right">
+          <img class="logo" src={this.props.image}/>
         </div>
         <div class="media-body">
-          <h4 class="media-Heading">This is changing</h4>
-          <p class="text-left"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla erat nisi, viverra vitae tellus at, vehicula ullamcorper tellus. Pellentesque tincidunt dui mollis quam maximus interdum. Etiam pulvinar urna et lectus ultrices pellentesque. Praesent dapibus vel lacus in posuere. Etiam quis accumsan eros. Curabitur pretium facilisis pharetra. Sed leo sem, dictum in dolor et, tempus venenatis mauris. Donec gravida ac est id mollis. Aliquam luctus est vitae metus tempus iaculis.
+          <h4 class="media-Heading">{this.props.title}</h4>
+          <p class="text-left">
+            {this.props.description}
           </p>
         </div>
       </div>

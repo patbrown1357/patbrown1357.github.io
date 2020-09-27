@@ -16,81 +16,129 @@ var About = function (_React$Component) {
   }
 
   _createClass(About, [{
-    key: 'render',
+    key: "hide",
+    value: function hide(comp) {
+      var style = document.getElementById(comp).style.display;
+      if (style == "none") {
+        document.getElementById(comp).style.display = "flex";
+      } else if (style != "none") {
+        document.getElementById(comp).style.display = "none";
+      }
+    }
+  }, {
+    key: "render",
     value: function render() {
+      var _this2 = this;
+
       return React.createElement(
-        'div',
-        { 'class': 'description' },
+        "div",
+        { id: "fixabout", "class": "description" },
         React.createElement(
-          'div',
-          { 'class': 'row' },
+          "div",
+          { id: "general", "class": "row" },
           React.createElement(
-            'h1',
-            null,
-            ' Who is Patrick ',
-            React.createElement(
-              'u',
-              null,
-              'Otho'
-            ),
-            ' Brown? '
-          )
-        ),
-        React.createElement(
-          'div',
-          { 'class': 'row' },
-          React.createElement(
-            'h4',
-            null,
-            'General'
+            "h4",
+            { onClick: function onClick() {
+                return _this2.hide("generalp");
+              } },
+            "General"
           ),
-          React.createElement('div', { 'class': 'w-100' }),
+          React.createElement("div", { "class": "w-100" }),
           React.createElement(
-            'div',
-            { 'class': 'col-sm' },
+            "div",
+            { "class": "col-sm" },
             React.createElement(
-              'p',
-              null,
-              'I\'m currently in my 20\'s and living in Pittsburgh. I\'m originally from',
+              "p",
+              { id: "generalp", style: { display: 'none' } },
+              "I'm currently in my 20's and living in Pittsburgh. I'm originally from",
               React.createElement(
-                'a',
-                { href: 'https://en.wikipedia.org/wiki/Johnstown,_Pennsylvania' },
-                ' Johnstown, PA '
+                "a",
+                { href: "https://en.wikipedia.org/wiki/Johnstown,_Pennsylvania" },
+                " Johnstown, PA "
               ),
-              'which is about an hour east of Pittsburgh.'
+              "which is about an hour east of Pittsburgh."
             )
+          )
+        ),
+        React.createElement(
+          "div",
+          { id: "hobbies", "class": "row" },
+          React.createElement(
+            "h4",
+            { onClick: function onClick() {
+                return _this2.hide("hobbiesp");
+              } },
+            "Hobbies"
           ),
+          React.createElement("div", { "class": "w-100" }),
           React.createElement(
-            'div',
-            { 'class': 'col-sm' },
-            React.createElement('img', { 'class': 'logo', src: 'images/Johnstownview.jpg' })
+            "div",
+            { "class": "col-sm" },
+            React.createElement(
+              "p",
+              { id: "hobbiesp", style: { display: 'none' } },
+              "I'm currently in my 20's and living in Pittsburgh. I'm originally from",
+              React.createElement(
+                "a",
+                { href: "https://en.wikipedia.org/wiki/Johnstown,_Pennsylvania" },
+                " Johnstown, PA "
+              ),
+              "which is about an hour east of Pittsburgh."
+            )
           )
         ),
         React.createElement(
-          'div',
-          { 'class': 'row' },
+          "div",
+          { id: "college", "class": "row" },
           React.createElement(
-            'h4',
-            null,
-            'Hobbies'
+            "h4",
+            { onClick: function onClick() {
+                return _this2.hide("schoolp");
+              } },
+            "School"
+          ),
+          React.createElement("div", { "class": "w-100" }),
+          React.createElement(
+            "div",
+            { "class": "col-sm" },
+            React.createElement(
+              "p",
+              { id: "schoolp", style: { display: 'none' } },
+              "I'm currently in my 20's and living in Pittsburgh. I'm originally from",
+              React.createElement(
+                "a",
+                { href: "https://en.wikipedia.org/wiki/Johnstown,_Pennsylvania" },
+                " Johnstown, PA "
+              ),
+              "which is about an hour east of Pittsburgh."
+            )
           )
         ),
         React.createElement(
-          'div',
-          { 'class': 'row' },
+          "div",
+          { id: "h&d", "class": "row" },
           React.createElement(
-            'h4',
-            null,
-            'College'
-          )
-        ),
-        React.createElement(
-          'div',
-          { 'class': 'row' },
+            "h4",
+            { onClick: function onClick() {
+                return _this2.hide("handpp");
+              } },
+            "Hopes & Dreams"
+          ),
+          React.createElement("div", { "class": "w-100" }),
           React.createElement(
-            'h4',
-            null,
-            'Hopes & Dreams'
+            "div",
+            { "class": "col-sm" },
+            React.createElement(
+              "p",
+              { id: "handpp", style: { display: 'none' } },
+              "I'm currently in my 20's and living in Pittsburgh. I'm originally from",
+              React.createElement(
+                "a",
+                { href: "https://en.wikipedia.org/wiki/Johnstown,_Pennsylvania" },
+                " Johnstown, PA "
+              ),
+              "which is about an hour east of Pittsburgh."
+            )
           )
         )
       );
