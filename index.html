@@ -9,15 +9,15 @@
     <link rel="stylesheet" href="assets/css/styles.min.css">
 </head>
 
-<body style="background: url(&quot;assets/img/darkerTile.jpg&quot;) no-repeat;background-size: cover;width: 100%;">
+<body style="background: url(&quot;assets/img/darkerTile.jpg&quot;) no-repeat;background-size: auto;width: 100%;">
     <div>
         <nav class="navbar navbar-light navbar-expand-md">
             <div class="container-fluid"><a class="navbar-brand" href="#" style="font-size: 32px;">Patrick Otho Brown</a><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
-                <div class="collapse navbar-collapse" id="navcol-1" style="font-size: 32px;">
+                <div class="collapse navbar-collapse" id="navcol-1" style="font-size: 32px;padding-top: 0;padding-right: 0px;margin-right: 5%;">
                     <ul class="nav navbar-nav ml-auto">
-                        <li class="nav-item" style="padding-right: 10px;"><a class="nav-link active" href="#project_heading" style="border-style: none;padding-right: 10px;">Projects</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#about_heading" style="padding-right: 10px;" target="_top">About</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#" style="padding-right: 10px;">Contact</a></li>
+                        <li class="nav-item" style="padding-right: px;"><a class="nav-link active" href="#project_heading" style="border-style: none;padding-right: 10px;padding-left: 10px;margin-left: 10px;margin-right: 10px;">Projects</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#about" style="padding-right: 10px;padding-left: 10px;margin-left: 10px;margin-right: 10px;" target="_top">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#" style="padding-right: 10px;padding-left: 10px;margin-left: 10px;margin-right: 10px;">Contact</a></li>
                     </ul>
                 </div>
             </div>
@@ -25,7 +25,7 @@
     </div>
     <div class="container intro" id="introduction_p" style="margin: 80px 0px 80px 5%;padding: 0px;">
         <h1>Hello!</h1>
-        <p>Welcome to my website, this is both a portfolio and a project. As I grow it will too.</p>
+        <p style="width: 70%;margin-top: 10px;">Welcome to my website, this is both a portfolio and a project. As I grow it will too. If you like the site, the projects on it, or are interested in me, I encourage you to contact me. The best way to reach me would be through my email at <a href="mailto:patbrown1357@gmail.com">patbrown1357@gmail.com</a>.</p>
     </div>
     <h2 id="project_heading" style="padding: 0px 0px 0px 5%;color: rgb(235,230,251);">Projects</h2>
     <section>
@@ -33,24 +33,33 @@
             <div class="col-3 proj-pic"><img></div>
             <div class="col proj-desc">
                 <h4>Braille Buddy</h4>
-                <p>Paragraph</p>
+                <p style="width: 80%;">Braille Buddy was the 2019 Grand prize winner of the Tartan-hacks hackathon at Carnegie Mellon University. It converts English text into braille using Arduino motors. It works by converting each character into an integer code which corresponds to which dots need to be raised on the device. I.e.&nbsp; 'e' is equivalent to '15' which means the first and fifth dot get raised.&nbsp;</p>
+            </div>
+        </div>
+        <div class="row" style="padding-left: 5%;">
+            <div class="col-3 proj-pic"><img></div>
+            <div class="col proj-desc">
+                <h4>Credible Collector (Creddy)</h4>
+                <p style="width: 80%;">The Credible Collector was an entry in the 2020 SteelHacks hackathon at the University of Pittsburgh. The goal of the project was to create a graph of papers. Each paper would be connected to another paper which either it cited or which cited it. This would allow students to visualize the credibility of a paper they wish to use for research, where heavily cited papers would be assumed to have the most credibility.</p>
             </div>
         </div>
         <div class="row" style="padding-left: 5%;">
             <div class="col-3 proj-pic"><img></div>
             <div class="col proj-desc">
                 <h4>RazzyBot</h4>
-                <p>Paragraph</p>
+                <p style="width: 80%;">RazzyBot is a currently in progress personal project. The goal is to create an automated twitch stream utilizing a Raspberry Pi. The audience would play against the pi itself at various games. Some other features would be for it to start/stop the stream automatically, moderate chat automatically, and to scrape the chat in order to choose the audience input.</p>
             </div>
         </div>
     </section>
-    <h2 id="about_heading" style="margin: 0px 0px 0px 5%;color: rgb(235,230,251);">About Me<br><br><br></h2>
     <div class="main-split">
         <div class="container">
             <div class="row">
                 <div class="col about" id="picture" style="padding: 30px 30px 10px 0px;">
                     <h4>A Little About Me</h4><img class="img-thumbnail" src="assets/img/yaharr.jpg">
-                    <p>I am a third year computer science student at the university of Pittsburgh.</p>
+                    <p>Picture is of me from Halloween 2019. I went as an old fisherman, but my friends said I just looked like <a href="https://en.wikipedia.org/wiki/Gorton%27s_of_Gloucester">Gorton</a>.&nbsp;</p>
+                </div>
+                <div class="col" style="padding: 30px 30px 0px 0px;">
+                    <p style="margin-top: 10%;">&nbsp; &nbsp; &nbsp;I am a third year computer science student at the University of Pittsburgh. I like to ask questions and I try to think outside the box at every given opportunity, and I'm not afraid of trying weird solutions. This just means my friends get annoyed when we play games together. I also enjoy the subjects of math and philosophy which I've found have heavy overlap with CS.&nbsp;<br>&nbsp; &nbsp; &nbsp;Some of my primary hobbies include 3D printing, art, movies, and video games. But I like new experiences so there is often a new 'hobby of the week.'&nbsp;<br>&nbsp; &nbsp; &nbsp;I am always looking for new opportunities, so if you are interested in having me work for you or with you I urge you to contact me.&nbsp;</p>
                 </div>
                 <div class="col" style="padding: 30px 30px 0px 0px;">
 <h3 class="feature-title">LinkedIn Profile</h3>
@@ -59,9 +68,6 @@
         <a class="LI-simple-link" href='https://www.linkedin.com/in/patrick-o-brown?trk=profile-badge'>Patrick Brown</a>
     </div> 
  </div>
-                <div class="col" style="padding: 30px 30px 0px 0px;">
-                    <p>Paragraph</p>
-                </div>
             </div>
         </div>
     </div>
@@ -70,7 +76,7 @@
         <p style="padding-right: 30%;padding-bottom: 5%;">This website is not a complete picture of me as a person. If you're interested in contacting me either on a professional or personal level I encourage you to.&nbsp;<br><br>As an extension this website is not a full reflection of my skills. There are soft skills and little widgets which can't be fully&nbsp;represented by a single portfolio site. If you are interested in these I encourage you to contact me.<br></p>
         <h4>Contact Information</h4>
         <p>patbrown1357@gmail.com<br>https://www.linkedin.com/in/patrick-o-brown/<br></p>
-        <p class="text-center text-white-50" style="margin: 0;"><br>© 2020 Copyright: patrickotho.com<br><br></p>
+        <p class="text-center text-white-50" style="margin: 0;margin-left: 0px;text-align: center;"><br>© 2020 Copyright: patrickotho.com<br><br></p>
     </section>
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
